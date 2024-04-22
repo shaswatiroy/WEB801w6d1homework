@@ -1,6 +1,6 @@
 header {
     background: url(images/central_park.jpg) 0 -200px no-repeat;  /* place image as background */
-    background-size: 1500px;
+    background-size: cover;
     /*background-position: 0 -200px;*/
     /*background-repeat: no-repeat;*/
     height: 400px; /* give header some height to display the background image */
@@ -49,3 +49,18 @@ header {
     padding-top: 20px;
     color:rgb(211, 218, 240);
   }
+
+  /* Responsive styles */
+@media (max-width: 599px) {
+  main {
+      display: block; /* Stack elements */
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Display two columns */
+      grid-gap: 20px; /* Add gap between columns */
+  }
+}
